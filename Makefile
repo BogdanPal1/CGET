@@ -8,7 +8,7 @@ EXECUTABLE=hello
 all: $(SOURCES) $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@ -lcurl
 
 .cpp.o:
 	$(CC) $(CFLAGS) $< -o $@
