@@ -49,8 +49,8 @@ jobs:
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
       
     # Installing curl
-    - name: Install curl
-      run: sudo apt install curl
+    - name: Install libcurl
+      run: sudo apt install libcurl4-openssl-dev
       
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
